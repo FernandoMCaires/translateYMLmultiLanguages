@@ -1,65 +1,48 @@
-# 🈯️ YAML Multilanguage File Translator
+🌍 YAML Multilingual File Translator
+Tired of manually translating your .yml files? This tool automates the translation of .yml files (like pt-br.yml) into multiple languages using the free google-translate-api-x. Streamline your localization process and keep your projects multilingual with ease!
 
-Automatize a tradução de arquivos `.yml` (ex: `pt-br.yml`) para múltiplos idiomas usando a API gratuita `google-translate-api-x`.
+🚀 Quick Start
+Get your translations up and running in a few simple steps!
 
----
+Clone the repository:
 
-## 📁 Estrutura Esperada
+Bash
 
-```text
-├── pt-br.yml           # Arquivo de entrada com textos em português
-├── traduzir-linhas.js  # Script de tradução
-```
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
+Install dependencies:
 
----
+Bash
 
-## ⚙️ Pré-requisitos
+npm install
+Add your input file (e.g., pt-br.yml) to the root of the project. This will be the source for your translations.
 
-- Node.js 16+
-- Conexão com a internet
+Run the script, specifying your desired target languages:
 
----
+Bash
 
-## 🚀 Como Usar
+node traduzir-linhas.js en es fr
+This command will automatically generate en.yml, es.yml, and fr.yml files, each containing the translated content.
 
-1. **Clone o repositório:**
+📁 Project Structure
+To ensure the script works correctly, your project should follow this structure:
 
-    ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
-    ```
+Plaintext
 
-2. **Instale as dependências:**
+├── pt-br.yml           # Your input file with text in the source language (e.g., Portuguese)
+├── traduzir-linhas.js  # The core translation script
+⚙️ Prerequisites
+Before you begin, make sure you have:
 
-    ```bash
-    npm install
-    ```
+Node.js 16+ installed on your system.
+An active internet connection to access the translation API.
+📝 Important Notes
+API Usage: This tool leverages the unofficial and free Google Translate API via google-translate-api-x.
+Translation Speed: Translating extensive files can take some time. The script is designed to handle this by automatically managing pauses and retries.
+Error Logging: Any errors encountered during the translation process will be logged and saved in the logs/ directory for easy debugging.
+⚠️ Troubleshooting
+If you encounter a "module not found" error for google-translate-api-x, you can manually install it:
 
-3. **Adicione seu arquivo de entrada** (ex: `pt-br.yml`) na raiz do projeto.
+Bash
 
-4. **Execute o script informando os idiomas desejados:**
-
-    ```bash
-    node traduzir-linhas.js en es
-    ```
-
-    Isso irá criar automaticamente os arquivos `en.yml` e `es.yml` com o conteúdo traduzido.
-
----
-
-## 📌 Observações
-
-- As traduções utilizam a API gratuita e não-oficial do Google via `google-translate-api-x`.
-- Traduções extensas podem demorar (o script gerencia pausas e tentativas automaticamente).
-- Logs de erros ficam salvos na pasta `logs/`.
-
----
-
-## 🧱 Instalação Manual de Dependência
-
-Se aparecer erro de "module not found" para `google-translate-api-x`, instale manualmente:
-
-
---- npm install google-translate-api-x
-
-
+npm install google-translate-api-x
