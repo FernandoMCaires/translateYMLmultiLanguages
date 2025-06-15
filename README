@@ -1,0 +1,65 @@
+# 🈯️ YAML Multilanguage File Translator
+
+Automatize a tradução de arquivos `.yml` (ex: `pt-br.yml`) para múltiplos idiomas usando a API gratuita `google-translate-api-x`.
+
+---
+
+## 📁 Estrutura Esperada
+
+```text
+├── pt-br.yml           # Arquivo de entrada com textos em português
+├── traduzir-linhas.js  # Script de tradução
+```
+
+---
+
+## ⚙️ Pré-requisitos
+
+- Node.js 16+
+- Conexão com a internet
+
+---
+
+## 🚀 Como Usar
+
+1. **Clone o repositório:**
+
+    ```bash
+    git clone https://github.com/your-username/your-repository.git
+    cd your-repository
+    ```
+
+2. **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Adicione seu arquivo de entrada** (ex: `pt-br.yml`) na raiz do projeto.
+
+4. **Execute o script informando os idiomas desejados:**
+
+    ```bash
+    node traduzir-linhas.js en es
+    ```
+
+    Isso irá criar automaticamente os arquivos `en.yml` e `es.yml` com o conteúdo traduzido.
+
+---
+
+## 📌 Observações
+
+- As traduções utilizam a API gratuita e não-oficial do Google via `google-translate-api-x`.
+- Traduções extensas podem demorar (o script gerencia pausas e tentativas automaticamente).
+- Logs de erros ficam salvos na pasta `logs/`.
+
+---
+
+## 🧱 Instalação Manual de Dependência
+
+Se aparecer erro de "module not found" para `google-translate-api-x`, instale manualmente:
+
+
+--- npm install google-translate-api-x
+
+

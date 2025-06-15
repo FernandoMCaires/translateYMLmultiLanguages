@@ -1,0 +1,15 @@
+{
+  "name": "translateymlmultilanguages",
+  "version": "1.0.0",
+  "main": "traduzir-linhas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "google-translate-api-x": "^10.7.2"
+  }
+}

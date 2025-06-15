@@ -1,0 +1,21 @@
+# Node modules (bibliotecas instaladas com npm)
+node_modules/
+
+# Arquivos de log
+*.log
+logs/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+
+# Arquivos temporários ou de backup
+*.tmp
+*.bak
+
+# Saídas de tradução (se não quiser versionar os arquivos traduzidos automaticamente)
+*.yml
+!pt-br.yml  # mantém o arquivo original em português no repositório
