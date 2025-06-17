@@ -10,8 +10,8 @@ Get your translations up and running in a few simple steps!
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
+    git clone https://github.com/FernandoMCaires/translateYMLmultiLanguages
+    cd translateYMLmultiLanguages
     ```
 
 2. **Install dependencies:**
